@@ -15,6 +15,16 @@ MonoBehaviour:
   m_LayerNames:
   - Default
   - 
+  - Sun
+  - Mercury
+  - Venus
+  - Earth
+  - Mars
+  - Jupiter
+  - Saturn
+  - Uranus
+  - Neptune
+  - Pluto
   - 
   - 
   - 
@@ -34,14 +44,4 @@ MonoBehaviour:
   - 
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Teleport

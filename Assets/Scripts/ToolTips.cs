@@ -6,12 +6,10 @@ using TMPro;
 
 public class ToolTips : MonoBehaviour
 {
-    public GameObject player;
-
     public UnityEvent OnEnter = new UnityEvent();
     public UnityEvent OnExit = new UnityEvent();
-
-    //public UnityEvent OnActivate = new UnityEvent();
+    public UnityEvent OnSelect = new UnityEvent();
+    public UnityEvent OnDeselect = new UnityEvent();
 
     private void OnTriggerEnter(Collider other)
     {
@@ -23,9 +21,24 @@ public class ToolTips : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         OnExit.Invoke();
-        //Destroy(this);
     }
 
+    private void OnCollisionEnter(Collision collision)   
+    {
+        if (gameObject.tag == "Planet")
+        {
+            OnSelect.Invoke();
+        }
+    }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        OnDeselect.Invoke();
+    }
+    public void DestroyTrigger()
+    {
+        Destroy(gameObject);
+    }
 
 
 }
