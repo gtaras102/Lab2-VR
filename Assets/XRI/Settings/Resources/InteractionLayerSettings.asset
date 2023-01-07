@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_LayerNames:
   - Default
-  - 
+  - UI
   - Sun
   - Mercury
   - Venus
@@ -25,7 +25,7 @@ MonoBehaviour:
   - Uranus
   - Neptune
   - Pluto
-  - 
+  - Button
   - 
   - 
   - 
